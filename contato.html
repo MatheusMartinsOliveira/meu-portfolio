@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Matheus Martins</title>
+</head>
+
+<body>
+    <header>
+        <h1>Matheus Henrique Martins de Souza Oliveira</h1><br>
+        <h2>Desenvolvedor Web em formação</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Fale comigo</h3>
+            <form action="#" method="post">
+                <fieldset>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required minlength="3"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" placeholder="Somente números" title="Ex.: 99999-9999"><br><br>
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label for="cep" required pattern="[0-9]{8}" placeholder="Somente números" title="Ex.: 80000-000">CEP</label>
+                    <input type="text" id="cep" name="cep"><br><br>
+                    <label for="rua">Rua</label>
+                    <input type="text" id="rua" name="rua"><br><br>
+                    <label for="numero">Número</label>
+                    <input type="number" id="numero" name="numero" min="1" max="99999"><br><br>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade"><br><br>
+                    <label for="estado">Estado</label>
+                    <select name="estado">
+                        <option value="PR" selected>Paraná</option>
+                        <option value="BA">Bahia</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Interesse</legend>
+                    <label for="area_interesse">Área de interesse</label>
+                    <select name="Área de interesse" required>
+                        <option value="Front-end" >Front-end</option>
+                        <option value="Back-end">Back-end</option>
+                        <option value="Banco-de-Dados">Banco de Dados</option>
+                        <option value="Full-stack">Full-stack</option>
+                    </select><br><br>
+                    <label for="nivel">Nível de experiência</label>
+                    <input type="radio" id="iniciante" name="nivel" value="iniciante">
+                    <label for="iniciante">Iniciante</label>
+                    <input type="radio" id="intermediario" name="nivel" value="intermediario">
+                    <label for="intermediario">Intermediário</label>
+                    <input type="radio" id="avancado" name="nivel" value="avancado">
+                    <label for="avancado">Avançado</label>
+                    <br><br>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea name="mensagem" id="mensagem" rows="5" maxlength="500"></textarea><br>
+                    <input type="checkbox" id="newsletter" name="newsletter" required>
+                    <label for="newsletter">Li e aceito os termos de uso</label>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Matheus Henrique Martins de Souza Oliveira <a href="mailto:matheushenriquemso123@gmail.com">Meu
+                email</a></p>
+    </footer>
+</body>
+
+</html>
